@@ -174,41 +174,43 @@ export default function Home() {
             <span className="ml-4 h-px w-32 bg-white/30" />
           </div>
 
-          <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-[1fr_1.2fr_1fr] items-end">
-            <p className="text-[11px] leading-relaxed text-white/60 max-w-[200px]">
-              Здесь будет текст-описание для видео которое вам предоставлено для
-              запуска и которое очень интересное.
+          <div className="mt-16 flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+            <p className="text-[11px] leading-relaxed text-white/60 max-w-[220px]">
+              Здесь будет текст-описание для видео, которое вам предоставлено
+              для запуска и которое очень интересное.
             </p>
-            <div className="relative h-48 overflow-hidden">
-              <Image
-                src="/images/video-1.jpg"
-                alt=""
-                fill
-                className="object-cover"
-              />
-              <div className="absolute inset-0 flex items-center justify-center bg-black/20">
-                <button
-                  type="button"
-                  className="flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm"
-                >
-                  <Play className="h-4 w-4 fill-white" />
-                </button>
+            <div className="flex gap-6 md:w-[60%] md:justify-end">
+              <div className="relative h-48 w-1/2 overflow-hidden">
+                <Image
+                  src="/images/video-1.jpg"
+                  alt=""
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black/20">
+                  <button
+                    type="button"
+                    className="flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm"
+                  >
+                    <Play className="h-4 w-4 fill-white" />
+                  </button>
+                </div>
               </div>
-            </div>
-            <div className="relative h-48 overflow-hidden">
-              <Image
-                src="/images/video-2.jpg"
-                alt=""
-                fill
-                className="object-cover"
-              />
-              <div className="absolute inset-0 flex items-center justify-center bg-black/20">
-                <button
-                  type="button"
-                  className="flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm"
-                >
-                  <Play className="h-4 w-4 fill-white" />
-                </button>
+              <div className="relative h-48 w-1/2 overflow-hidden">
+                <Image
+                  src="/images/video-2.jpg"
+                  alt=""
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black/20">
+                  <button
+                    type="button"
+                    className="flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm"
+                  >
+                    <Play className="h-4 w-4 fill-white" />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
