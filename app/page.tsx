@@ -78,7 +78,7 @@ export default function Home() {
 
         {/* Bottom row */}
         <div className="absolute bottom-0 left-0 right-0 z-10 mx-auto max-w-[1280px] px-8 pb-10">
-          <div className="flex items-center justify-center gap-16 pb-8 text-white/40">
+          <div className="flex items-center justify-between px-12 pb-44 text-white/40">
             <Triangle className="h-5 w-5 fill-[hsl(var(--brand))] text-[hsl(var(--brand))]" />
             <Anchor className="h-5 w-5" />
             <Plane className="h-5 w-5" />
