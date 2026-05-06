@@ -1,26 +1,45 @@
 @import "tailwindcss";
 
+/*
+  Design tokens for the Travel landing page.
+  All colors use HSL so they can be composed with Tailwind's `hsl(var(--token))`.
+*/
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: 215 32% 11%;
+  --foreground: 0 0% 100%;
+
+  --bg-deep: 215 35% 8%;
+  --bg-section: 215 32% 11%;
+  --brand: 18 90% 55%;
+  --muted-text: 215 15% 62%;
+  --hairline: 215 20% 22%;
+
+  --border: 215 20% 22%;
+  --radius: 0.5rem;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-border: hsl(var(--border));
+  --color-brand: hsl(var(--brand));
+  --color-bg-deep: hsl(var(--bg-deep));
+  --color-bg-section: hsl(var(--bg-section));
+  --color-muted-text: hsl(var(--muted-text));
+  --color-hairline: hsl(var(--hairline));
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  background: hsl(var(--bg-deep));
+  color: hsl(var(--foreground));
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+* {
+  border-color: hsl(var(--border));
 }
